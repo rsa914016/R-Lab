@@ -33,11 +33,7 @@ if(ch == 1){
 
 # b)Write an R program to Find L.C.M of two numbers
 lcm <- function(x, y) {
-  if(x > y){
-    greater = x
-  } else{
-    greater = y
-  }
+  greater = if(x > y) x else y
   while(TRUE) {
     if((greater %% x == 0) && (greater %% y == 0)){
       lcm = greater

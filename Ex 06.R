@@ -23,13 +23,14 @@ for(i in 1:num) {
 
 num = as.integer(readline('Enter a number : '))
 fib = function(x){
-  if(x ==0 || x == 1 ){
+  if(x == 0 || x == 1 ){
     return(x)
   } else {
     return (fib(x-1) + fib(x-2))
   }
 }
 
-for(i in 0:num){
+for(i in 0:(num-1)){
   cat(fib(i),end = " ")
 }
+

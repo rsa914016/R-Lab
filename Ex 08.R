@@ -20,9 +20,10 @@ print(mat3)
 print(mat3['row1',])
 
 # b)Write an R Program to create a Matrix using cbind() and rbind() functions.
-mat1 = matrix(1:9,nrow=3,byrow=TRUE)
-mat1
-mat1 = rbind(mat1, c(1,2,3))
-mat1
-mat1 = cbind(mat1, -4:-1)
-mat1
+seq_1 = c(1,2,3)
+seq_2 = c(4,5,6)
+seq_3 = c(7,8,9)
+m1 = rbind(seq_1,seq_2,seq_3)
+m2 = cbind(seq_1,seq_2,seq_3)
+m1
+m2

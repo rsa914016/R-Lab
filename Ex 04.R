@@ -19,10 +19,14 @@ size_factor = factor(size)
 print(size_factor)
 ordered_size = factor(size,levels=c("small","medium","large"),ordered = 
                         TRUE) 
-print(ordered_size) 
+print(ordered_size)
+class(size_factor)
+class(ordered_size)
 
 # or
 
 sizes = ordered(size,c("small","medium","large"))
 print(sizes) 
 print(is.ordered(sizes))
+print(class(sizes))
+
